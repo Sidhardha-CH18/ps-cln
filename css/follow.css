@@ -1,0 +1,31 @@
+.follow{
+    background-color: rgb(245, 247, 250);
+}
+.ftitle{
+    width: max-content;
+    margin:  auto;
+    padding: 4% 0;
+}
+.ftitle h3{
+    color:rgb(31, 31, 31);
+    font-weight: 300;
+ font-size: clamp(17px, 2vw, 36px);
+}
+.followgrid{
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 45%;
+    justify-content: center;
+    gap: 4%;
+    padding-bottom: 7%;
+}
+.followgrid div{
+    flex: 1;
+
+}
+.followgrid img{
+    width: 100%;
+}

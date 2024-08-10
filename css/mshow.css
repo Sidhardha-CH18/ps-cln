@@ -1,0 +1,79 @@
+.minfo{
+    height: max-content;
+    position: relative;
+}
+.mimage img{
+    height: fit-content;
+    width: 100%;
+}
+.mcontent{
+    position: absolute;
+    top: 14%;
+    left: 6%;
+    width: 65%;
+}
+.mcontent h1{
+   color: white;
+   font-weight: 300;
+   letter-spacing: -0.1px;
+   line-height: 1.25em;
+   font-size: clamp(18px, 3.7vw, 40px);
+   margin-bottom: 1%;
+}
+.mcontent p{
+   color: rgb(178, 178, 178);
+   font-weight: 400;
+   letter-spacing: 0.1px;
+   line-height: 1.5em;
+   font-size: clamp(13px, 1.4vw, 18px);
+}
+.mslider{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.mslide{
+    width: 29%;
+    margin: 0 1.2%;
+    position: relative;
+    border: none;
+}
+.msimage img{
+    width: 100%;
+    border-radius: 15px;
+    border: solid none;
+}
+.mscontent{
+   position:relative;
+   left: 3%;
+}
+.mscontent h5{
+   color: white;
+   margin: 0;
+   margin-top: 4%;
+   font-size: clamp(15px, 1.4vw, 20px);
+   font-weight: 500;
+}
+.mscontent p{
+    color: white;
+    margin: 0;
+    margin-top: 2%;
+    font-size: clamp(13px, 1.4vw, 16px);
+    font-weight: 100;
+}
+.mbutton{
+   width: max-content;
+   margin:auto;
+   padding: 4% 0;
+ }
+.mbutton button{
+    background-color: white;
+    padding: 1.5vh 1vw;
+    font-weight: bold;
+    font-size: medium;
+    border-radius: 3vh;
+    border: solid  rgb(38, 37, 79);
+    cursor: pointer;
+
+}

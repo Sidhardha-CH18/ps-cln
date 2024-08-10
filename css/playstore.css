@@ -1,0 +1,55 @@
+.playstore{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 5% 0;
+    justify-content: center;
+}
+.psimage{
+   width: 60%;
+   height: max-content;
+   margin: auto 2%;
+   transition: all 0.3s;
+}
+
+.psimage img{
+    width: 100%;
+    border-radius: 3vh; 
+    cursor: pointer; 
+    
+}
+.psimage:hover{
+    transform: scale(1.05);
+}
+.pscontent{
+    width: 25%;
+    margin: auto 2%;
+}
+.psinfo h2{
+font-weight: 100;
+font-size: clamp(18px, 3.7vw, 40px);
+letter-spacing: .1px;
+line-height: 1.25em;
+margin: 0;
+}
+.psinfo p{
+font-size: clamp(13px, 1.4vw, 18px);
+font-weight: 400;
+letter-spacing: .1px;
+line-height: 1.5em;
+color: rgb(107, 107, 107);
+margin-bottom: 8%;
+}
+.psbutton button{
+ background-color: rgb(213, 59, 0);
+ color: white;
+ font-weight: 600;
+ width: max-content;
+ padding: 2% 5%;
+ border-radius: 40px;
+ border: solid rgb(213, 59, 0);
+ font-size: clamp(14px, 1.4vw, 16px);
+ position: relative;
+ left: 2.5%;
+ cursor: pointer;
+}

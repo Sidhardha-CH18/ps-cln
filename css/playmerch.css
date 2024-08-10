@@ -1,0 +1,130 @@
+.msmain{
+    box-sizing: content-box;
+position: relative;
+z-index: 34;
+width: 100%;
+height: max-content;
+display: flex;
+flex-direction: row;
+overflow: hidden;
+cursor: grab;
+scroll-snap-type: x mandatory;
+scrollbar-width: 0px;
+scroll-behavior: smooth;
+justify-content: center;
+}
+.msmain::-webkit-scrollbar{
+    display: none;
+}
+
+.sliderm{
+    z-index: 100;  
+    scroll-snap-align: center;
+    scroll-behavior: smooth;    
+}
+
+.imagems{
+    cursor: pointer;
+    margin: auto 1vw;
+}
+
+.mtimage,.merchbg{
+    width: 100%;
+}
+.msmain.mdragging .mslide{
+    cursor: grab;
+    user-select: none;
+    scroll-behavior: auto;
+}
+.merchbg{
+   position: absolute;
+   top: 0%;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 28;
+   opacity: 0.4;
+}
+.mtitle{
+    padding: 4%;
+    width: 85%;
+    margin: auto;
+}
+.mtimage{
+    z-index: 392;
+    width: 10%;
+}
+.mrcontent{
+   width: 60%;
+}
+.mrcontent h2{
+ font-weight: 300;
+ margin: 0.4%;
+ line-height: 1.25em;
+ letter-spacing: .1px;
+ font-size: clamp(18px, 3.7vw, 40px);
+}
+.mrcontent p{
+color: rgb(107, 107, 107);
+line-height: 1.5em;
+font-size: clamp(15px, 1.8vw, 22px);
+}
+.imagems{
+box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 7px 0px;
+border-radius: 2.5vh;
+transition: all 0.45s;
+}
+.mtimage img,.merchbg img{
+    width: 100%;
+    height: 100%;
+}
+.imagems img{
+    width: 21vw;
+}
+.imagems:hover{
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 14px 0px;
+}
+.contentms>h2{
+   margin: 0;
+}
+.contentms>h2>p{
+    font-size: clamp(15px, 1.8vw, 22px);
+    font-weight: 300;
+    text-align: center;
+    color: rgb(61, 61, 61);
+}
+.msbutton{
+    width: max-content;
+    margin:0 auto ;
+}
+.msbutton button{
+    background-color: rgb(213, 59, 0);
+    color: white;
+    font-weight: 600;
+    width: max-content;
+    padding: 8% 13%;
+    border-radius: 40px;
+    border: solid rgb(213, 59, 0);
+    font-size: clamp(10px, 1.4vw, 16px);
+    cursor: pointer;
+}
+.mrcbutton{
+    width: max-content;
+    padding: 5% 0;
+    margin: auto;
+    z-index: 421;
+    position: relative;
+    border: none;
+}
+.mrcbutton button{
+    width: max-content;
+    background-color: rgb(0, 112, 204);
+    padding: 5% 13%;
+    font-size: clamp(10px, 1.4vw, 16px);
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 40px;
+    border: solid rgb(0, 112, 204);
+}

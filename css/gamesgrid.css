@@ -1,0 +1,81 @@
+.gridGames{
+    color: white;
+background-color: rgb(18, 19, 20);
+padding-bottom: 5vh;
+}
+.gheading{
+    display: block;
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+.ghcontent{
+    padding-top: 4vh;
+    font-size: 3.5vw;
+   font-weight: 300;
+   letter-spacing: -.1px;
+   line-height: 1.25em;
+}
+.gsticky{
+    border-radius: 3.8vh;
+    margin: 0 auto 4vh auto;
+    width: max-content;
+    position: sticky;
+    top: 68px;
+    z-index: 100;
+    display: flex;
+    border: solid 2px black;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(rgb(23, 24, 26), rgb(31, 32, 36));
+}
+.gstickyn{
+border-radius: 3.8vh;
+background-color: white;
+color: black;
+}
+.gstickyc,.gstickyn{
+    cursor: pointer;
+padding: 2vh 3vw;
+font-weight: bold;
+}
+.gridList{
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 95%;
+  justify-content: center;
+  grid-gap: 2%;
+}
+.ggame{ 
+    transform: all 0.5s;
+    cursor: pointer;
+    width: clamp(120px,14.5vw,300px);
+}
+
+.gcenter{ 
+    position: relative;
+}
+.gimage img{ 
+    border-radius: 9px;
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+.gversion{ 
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    top: 0px;
+}
+.gversion img{ 
+   position: absolute;
+   bottom: 3%;
+   width: 100%;
+}
+.gname p{ 
+    margin-top: 0;
+    text-wrap: nowrap;
+    overflow: hidden;
+ text-overflow: ellipsis;
+}

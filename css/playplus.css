@@ -1,0 +1,176 @@
+.playplus{
+    background-image: url(https://gmedia.playstation.com/is/image/SIEPDC/play-play-play-ps-plus-background-desktop-01-ja-jp-03jul23?$4000px$);
+    background-size: cover;
+    height: max-content;
+}
+.pptext{
+    text-align: center;
+}
+.pptext img{
+   width: 20%;
+   margin-top: 4%;
+}
+.pptext h2{
+    margin-top: 0;
+    margin-bottom: 1%;
+    font-weight: 300;
+    font-size: clamp(18px, 3.7vw, 40px);
+    letter-spacing: .1px;
+    line-height: 1.25em;
+}
+.pptext p{
+    color: rgb(107, 107, 107);
+    font-weight: 400;
+    line-height: 1.5em;
+    margin: 0 auto 3% auto;
+    font-size: clamp(14px, 1.4vw, 18px);
+}
+
+.pslidebutton{
+ position: relative;
+}
+.ppslider{
+ display: flex;
+ flex-direction: row;
+ width: 100%;
+ overflow-x: auto;
+ scroll-snap-type: x mandatory;
+ scrollbar-width: 0px;
+ position: relative;
+ scroll-behavior: smooth;
+}
+.ppslider::-webkit-scrollbar{
+display: none;
+}
+.ppslide{
+    scroll-snap-align: center;
+    scroll-behavior: smooth;
+    cursor: pointer;
+    margin-left: 1.3%;
+    width: max-content;
+    position: relative;
+    height: max-content;
+}
+.ppslider.dragging .sliderm{
+  cursor: grab;
+  user-select: none;
+  scroll-behavior: auto;
+}
+.ppslider.no-transition{
+    scroll-behavior: auto;
+}
+.pimage{ 
+    height: max-content;
+}
+.pimage::before{
+    background: linear-gradient(45deg,#000000 0%, #00000000 100%);
+    background-color: rgba(0, 0, 0, 0);
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    content: '';
+    position: absolute;
+    border-radius: 29px;
+    border: solid none;
+}
+.pimage img{
+    border-radius: 29px;
+    border: solid none; 
+    width: clamp(350px,85vw,900px); 
+}
+.pcontent{
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    width: 70% ;
+    height: 90%;
+    margin: auto;
+    margin-left: 3%;
+    margin-bottom: 3%;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.pcimage img{
+width: 50%;
+
+}
+.pinfo{
+    color: white; 
+}
+.pinfo h2{
+    font-size: clamp(16px, 3.4vw, 32px);
+    margin-top: 0;
+    font-weight: 300;
+    margin-bottom: 0.5em;
+}
+.pinfo p{
+    font-size: clamp(14px, 1.4vw, 15px);
+    font-weight: 400;  
+}
+.nextPB{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    display: inline-block;
+    background-color: blue;
+    cursor: pointer;
+    top: 42%;
+}
+.nextPBL{
+left: 3%;
+}
+.nextPBR{
+    right: 3%;
+}
+.pageSlide {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    padding: 3.7vh 0;
+}
+.pageBlip {
+    width: 40px; 
+    height: 3px;
+    margin: 0 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s; 
+    position: relative;
+}
+.pageBlip::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px; 
+    right: -10px;
+    bottom: -10px; 
+    cursor: pointer; 
+    background-color: transparent;
+}
+.pageBlip:hover {
+    background-color: #0056b3; 
+}
+.pbActive {
+    background-color: #0056b3;
+}
+.ppbutton {
+    width: max-content;
+    margin: 3% auto 0 auto;
+    padding-bottom: 4.5%;
+}
+.ppbutton button{
+    font-weight: 600;
+    color: white;
+    width: max-content;
+    cursor: pointer;
+    background-color: rgb(0, 100, 183);
+    padding: 4.4% 5.5%;
+    border-radius: 40px;
+    border: solid rgb(0, 100, 183);
+    font-size: clamp(14px, 1.4vw, 16px);
+    margin: auto;
+}

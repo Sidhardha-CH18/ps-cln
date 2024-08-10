@@ -1,0 +1,252 @@
+
+@font-face {
+    font-family: "Shared-Nav-Icons";
+    src: url('./sharedNav.woff') format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block
+}
+
+body,html{
+    
+    margin: 0px;
+    min-width: 690px;
+}
+
+.sony{
+    display: block;
+    direction: rtl;
+    left: 0;
+    top: 0;
+    background-color: black;
+    font-size: 0;
+    height: 36px;
+    position: relative;
+    width: 100%;
+}
+
+.sony-link{
+    text-align: center;
+    cursor: pointer;
+    text-decoration: underline;    
+}
+.sony-link img{
+    margin: 0 8px;
+    width: 75px; 
+    height: 36px;
+}
+.navbar{
+    background-color: white;
+   width: 100%;
+   position:sticky;
+   top: 0%;
+   z-index: 99999;
+}
+.nav{
+    
+    width: 97vw;
+}
+.navmenu,.nav,.drop-menu,.navitem,.quickLink,.navname,.signinbox{
+    display: flex;
+    flex-direction: row;
+}
+.navmenu{
+    flex: 0 1 auto;
+    justify-content: center;
+    
+}
+.signinbox{
+flex-grow: 1;
+align-items: center;
+justify-content: flex-end;
+}
+
+.navitem > label{ 
+    height:64px;
+    font-family:  sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    align-self: center;
+    cursor: pointer;
+    z-index: 9999;
+    padding: 0vh 0.4vw;
+    align-items: center;
+}
+.caret{
+    fill: rgb(153, 153, 153);
+    padding-left: 0.25vw;
+    }
+.drop-menu{
+height: 100%;
+}
+.signIn{
+    border: 1px solid rgb(0, 112, 204);
+    border-radius: 12px;
+    background-color: rgb(0, 112, 204);
+    cursor: pointer;
+    height: 24px;
+    min-width: 80px;
+    color: white;
+    font-weight: bolder;
+    letter-spacing: 0.4px;
+    font-size: 16px;
+}
+.search{
+    cursor: pointer;
+    margin: auto;
+    width: 24px;
+    }
+.menulist{
+    z-index: 999;
+        position: absolute;
+        top: 64px;
+        right: 0px;
+        width: 100%;
+        height: 100px;
+       display: flex;
+       background-color: white;
+       box-shadow: 0 11px 4px 0 rgba(0,0,0,.3);
+       flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.55s ease-in;
+}
+.navname,.search,.plystn,.plystn-img{
+    transition: height 0.55s ease;
+}
+.navname:hover{
+    color: blueviolet;
+}
+.navitem input:checked ~ .menulist{
+    opacity: 1;
+    top: 40px;
+    height: 220px;
+
+}
+.navitem input:checked ~ .navname{
+    color: blueviolet;
+}
+.menuone{
+    background-color:white;
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.menutwo{
+    background-color: white;
+    padding: 18px;
+    display: none;
+    border-style: solid;
+    border-width: 0;
+    border-top-color: rgb(204, 204, 204);
+    border-top-width: 0.8px;
+    justify-content: center;
+    align-items: center;
+ 
+    }
+    .menuone > div{ 
+        height: 128px;
+        width: 98px;
+        margin: 2px 11px;
+        padding: 0px 8px;
+    }
+.menu{
+    flex: 1 0 auto;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+}
+.menu span{
+    
+    display: block;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(31, 31, 31);
+}
+.menu::before{
+    font-family: 'Shared-Nav-Icons';
+    display: block;
+    font-size: 4.375rem;
+    height: 80px;
+    color: rgb(0, 112, 209);
+}
+.itemLink::before{
+    font-family: 'Shared-Nav-Icons';
+    color: #0072ce;
+    content: '\e93c';
+    font-size: 8px;
+}
+.menu-ps5::before{
+    content: '\e947';
+}
+.menu-ps4::before{
+    content: '\e91b';
+}
+.menu-ps-vr2::before{
+    content: '\e94a';
+}
+.menu-pc::before{
+    content: '\e94e';
+}
+.menu-ps-plus:before{
+    content: '\e90c';
+}
+.menu-psn-status:before{
+    content: '\e91c';
+}
+.menu-Support:before{
+    content: '\e903';
+}
+.menu-buygames:before{
+    content: '\e90e';
+}
+.menu-tmop:before{
+    content: '\e948';
+}
+.menu-ps-blog:before{
+    content: '\e906';
+}
+.menu-ps-plus:before{
+    content: '\e90c';
+}
+.menu-ps5-controllers:before{
+    content: '\e91d';
+}
+.menu-psprp:before{
+    content: '\e956';
+}
+.menu-headsets:before{
+    content: '\e94c';
+}
+.menu-all-accessories:before{
+    content: '\e951';
+}
+.menu-console:before{
+    content: '\e91b';
+}
+.menu-games:before{
+    content: '\e94f';
+}
+.menu-controllers:before{
+    content: '\e950';
+}
+.quickLink{
+   display: flex;
+}
+.itemLink{
+    margin-right: 20px;
+ }
+.itemLink{
+    text-decoration: none;
+    
+ }
+.itemLink  > span{
+    color: black;
+    font-size: 0.9rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    padding: 4px;
+ }
+

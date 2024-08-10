@@ -1,0 +1,152 @@
+
+.cslide{
+    transition: all 1s ease;
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    display: block;
+}
+.rslide{
+    z-index: 124;
+    scroll-snap-type: x mandatory;
+    position: relative;
+    transition: transform 0.6s ease;
+    left: 6%;
+    cursor: grab;
+    display: flex;
+    flex-direction: row;
+}
+.rsildes{
+    z-index: 125;
+    scroll-snap-align: center;
+    transform: translateX(0);
+}
+.rsildes img{
+    z-index: 126;
+    opacity: 0.75;
+    width: 14vw;
+    height: 17vh;
+    min-width: 170px;
+    min-height: 100px;
+    padding: 3px;
+    margin: 4px;
+    border: 3px blueviolet;
+    border-style: none;
+    box-shadow: 0 0.6vh 1vh rgba(0, 0, 0,0.2);
+    cursor: pointer;
+    border-radius: 1.5vw;
+    transition: all 0.25s ease;
+}  
+.rsildes img:hover{
+    transform: scale(1.03);
+}  
+
+.nextSB{
+    z-index: 127;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    display: inline-block;
+    background-color: blue;
+    cursor: pointer;
+    top: clamp(25px, 6vh, 100vh);
+}
+.nextSBL {
+    opacity: 0.75;
+    left: 5%; 
+    transform: translateX(-5%);
+}
+.nextSBR {
+    right: 5%;
+    transform: translateX(-5%);
+}
+figure {
+ margin: 0;
+}
+figcaption{
+    line-height: 1.3rem;
+    text-align: center;
+    color: rgb(84, 84, 84);
+    font-size: clamp(13px, 1.4vw, 15px);   
+}
+.rlist-top{
+    display: block;
+    width: 100%;
+    height: max-content;
+    overflow: hidden;
+    position: relative;
+}
+.rlist{
+ display: flex;
+ flex-direction: row;
+}
+@keyframes changeto {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+.rdisplay{
+    min-width: 100%;
+    position: relative;
+    display: none;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 6vw;
+    margin:  2% 5% 2% 6%;
+    animation: changeto 1s ease-in 1;
+}
+.rdisplay:first-child{
+  display: grid;
+}
+.rimage {
+    margin: auto;
+    width: 100%;
+}
+.rimage img{
+    width: 90%;
+    cursor: pointer;
+}
+.rcontent {
+    display: flex;
+    flex-direction: column; 
+}
+.rtitle {
+    flex: 1;
+} 
+.rtitle h2{
+    margin: 0;
+   font-size: 3.5vw;
+   font-weight: 300;
+   letter-spacing: -.1px;
+   line-height: 1.25em;
+}  
+.rinfo {
+    flex: 1;
+}
+.rheading{
+    color: rgb(0, 104, 189);
+    font-size: 1.8vw;
+    font-weight: 300;
+    margin: 0;
+}
+
+.rpara {
+    font-size: 1.1vw;
+    font-weight: 400;
+    
+}
+.rbutton {
+    display: flex;
+    flex-direction: row;
+}
+.rbutton button{
+    border-radius: 2.5vh;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 1vh 1vw;
+    width: fit-content;
+    color: white;
+    border: solid;
+    background-color: rgb(0, 112, 204);
+    border-color: rgb(0, 112, 204);
+}
